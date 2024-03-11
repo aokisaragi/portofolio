@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-Patrol Security</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/nativedroid2.css" />
+
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<h1 class="wow fadeIn" data-wow-delay='0.4s' style="text-align:center">E-Patrol Security</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<div class="nd2-card">
+
+					<div class="card-media">
+						<img src="img/patrol.png">
+					
+
+					<div class="card-supporting-text">
+						<div class="formarea">
+							<h3 style="text-align:center">LOGIN</h3>
+							<div class="form-row">
+								<input type="text" id="username" class="text-input--underbar width-full" placeholder="Username" value="" autocomplete="off">
+							</div>
+							<div class="form-row">
+								<input type="password" id="password" class="text-input--underbar width-full" placeholder="Password" value="" autocomplete="off">
+							</div>
+							<div class="form-row">
+								<input type="submit" name="submit" id="login" value="Login">
+							</div>
+						</div> 
+						<!-- Cards are a convenient means of displaying content composed of different elements. They're also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length. -->
+					
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="javascript/login.js"></script>
+
+
+	</body>
+</html>

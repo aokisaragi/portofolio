@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-Patrol Security</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/nativedroid2.css" />
+		<style> 
+			input[type=button], input[type=submit], input[type=reset] {
+			  background-color: #04AA6D;
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-decoration: none;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			</style>
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s' style="text-align:center">E-Patrol Security</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<div class="nd2-card">
+
+					<div class="card-media">
+						<img src="img/patrol.png">
+					
+
+					<div class="card-supporting-text">
+						<form id="fupForm" name="form1" method="post">
+							<!-- Search box. -->
+						<!-- Suggestions will be displayed in below div. -->
+					
+
+							<div class="form-group">
+						<input type="text" class="form-control" id="search" name="search" placeholder="RFID Petugas" required />
+							</div>
+							<!-- <div class="form-group"> -->
+								<!-- <input type="text" class="form-control" id="petugas" name="petugas" placeholder="Nama Petugas" required /> -->
+							<!-- </div> -->
+							<div class="form-group">
+						<input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="RFID Lokasi" required />
+							</div>
+						
+							<div id="display"></div>
+
+							<div id="lokasidisplay"></div>
+							<input type="button" name="save" class="btn btn-primary" value="Laporkan Data" id="butsave">
+						</form>
+						<div id="status"></div>
+				</div>
+			</div>
+					
+					
+					</div>
+
+				</div>
+			</div>
+
+		
+		
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="javascript/detail.js"></script>
+	<script src="javascript/lokasi.js"></script>
+	<script src="javascript/lapor.js"></script>
+
+		
+
+		
+
+
+        
+
+	</body>
+</html>
