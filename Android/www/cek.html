@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-Patrol Security</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/nativedroid2.css" />
+
+
+		<style> 
+			input[type=button], input[type=submit], input[type=reset] {
+			  background-color: #04AA6D;
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-decoration: none;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			</style>
+			<style>
+				th, td {
+				  border-style:solid;
+				  border-color: #96D4D4;
+				}
+				</style>
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+			
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s' style="text-align:center">E-Patrol Security</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<div class="nd2-card">
+
+					<div class="card-media">
+						
+					
+
+					<div class="card-supporting-text">
+						<h3 align="center">List Data Lokasi</h3>
+                        <table border="1" align="center">
+                        <tr>
+                        <td> <input type="button" id="display" value="Display All Data" /> </td>
+                    </tr>
+                    </table>
+					<div class="container">
+					<table class="table table-bordered table-sm" border-color="#96D4D4" style="width:100%">
+					<thead>
+					<tr>
+						<th style="width:40%">RFID</th>
+						<th style="width:40%">LOKASI</th>
+						<th style="width:20%" align="center">QR</th>
+					</tr>
+					</thead>
+					<tbody id="table">
+					
+					</tbody>
+				</table>
+			</div>
+				</div>
+			</div>
+					
+					
+					</div>
+
+				</div>
+			</div>
+
+		
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<!-- <script src="javascript/detail.js"></script> -->
+		<script src="javascript/list.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		
+
+		
+
+
+        
+
+	</body>
+</html>
